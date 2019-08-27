@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="redchamps" translate="label" sortOrder="999998">
+            <label>RedChamps</label>
+        </tab>
+        <section id="zero_price" translate="label" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Zero Price Text</label>
+            <tab>redchamps</tab>
+            <resource>RedChamps_ZeroPriceText::config</resource>
+            <group id="general" type="text" sortOrder="0" showInDefault="1" showInWebsite="0" showInStore="0" translate="label">
+                <label>General Settings</label>
+                <field id="text" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Text</label>
+                    <comment>
+                        Enter text you would like to be displayed instead for Zero price for free products.
+                    </comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
